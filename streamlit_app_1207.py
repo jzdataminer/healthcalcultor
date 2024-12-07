@@ -34,9 +34,9 @@ if st.button("Predict Health Score"):
     st.write(f"### Predicted Health Score: **{score:.2f}**")
 
     # Interpretation of the health score
-    if score >= 70:
+    if score >= 90:
         st.success("You are likely to be healthy. 🌟")
-    elif 50 <= score < 70:
+    elif 50 <= score < 90:
         st.warning("You are moderately healthy. 🧐")
     else:
         st.error("You may need to improve your health. 🩺")
